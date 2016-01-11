@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wander.questworld" >
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--
+     To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".AppCreate"
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/ActionBarTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+
+        <!-- 短信验证 -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 高德地图 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="477ac05626f0d6edb158bae33fd30f7c" />
+
+        <activity
+            android:name=".Login.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name=".Sight.SightSort"
+            android:label="@string/title_activity_sight_sort" />
+        <activity
+            android:name=".Sight.MapActivity"
+            android:label="@string/title_activity_map" />
+        <activity
+            android:name=".Sight.Detail.NearbyMapActivity"
+            android:label="@string/title_activity_map" />
+        <activity android:name=".Wel.FirstOpen" />
+        <activity android:name=".Wel.WelActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".Search.SearchActivity"
+            android:label="@string/title_activity_search" />
+        <activity
+            android:name=".Login.AlterPassword"
+            android:label="@string/title_activity_register2" />
+        <activity
+            android:name=".Sight.PlaceActivity"
+            android:label="@string/title_activity_place" />
+        <activity
+            android:name=".Sight.Detail.AttractionsActivity"
+            android:label="@string/title_activity_attractions" />
+        <activity
+            android:name=".Sight.Detail.Att_Photos"
+            android:label="@string/title_activity_att__photos" />
+        <activity
+            android:name=".Sight.Detail.PhotosShow"
+            android:label="@string/title_activity_photos_show"
+            android:theme="@style/MyFullscreenTheme" >
+        </activity>
+        <activity
+            android:name=".User.UserActivity"
+            android:label="@string/title_activity_user" >
+        </activity>
+        <activity
+            android:name=".User.SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name=".Release.ImageGridActivity"
+            android:label="@string/title_activity_image_grid" >
+        </activity>
+        <activity
+            android:name=".Release.PhotoActivity"
+            android:label="@string/title_activity_photo" >
+        </activity>
+        <activity
+            android:name=".Release.PublishedActivity"
+            android:label="@string/title_activity_published"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name=".Release.PicsActivity"
+            android:label="@string/title_activity_pics" >
+        </activity>
+        <activity
+            android:name=".Release.AddTag"
+            android:label="@string/title_activity_add_tag" >
+        </activity>
+        <activity
+            android:name=".InsPhotoActivity"
+            android:label="@string/title_activity_ins_photo"
+            android:theme="@style/MyFullscreenTheme" >
+        </activity>
+        <activity
+            android:name=".Comment.Comment"
+            android:label="@string/title_activity_comment"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <service
+            android:name=".Service.MessageService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name=".Message.MessageShow"
+            android:launchMode="singleTop"
+            android:label="@string/title_activity_message_show" >
+        </activity>
+    </application>
+
+</manifest>

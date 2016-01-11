@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/item_view"
+        android:gravity="center"
+        android:text="再往下没有了···"
+        android:textColor="@color/secondary_text"
+        android:textSize="15sp"
+        />
+
+</LinearLayout>

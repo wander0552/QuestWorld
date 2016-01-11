@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">setting</string>
+    <string name="action_sign_in"></string>
+    <string name="title_activity_login"></string>
+    <string name="app_name">QuestWorld</string>
+    <string name="action_sign_in_short">sign in</string>
+    <string name="title_activity_sight_sort">Sight</string>
+    <string name="title_activity_register">user register</string>
+    <string name="title_activity_map">sight map</string>
+    <string name="main_search">search</string>
+    <string name="setting_feelback">feelback</string>
+</resources>

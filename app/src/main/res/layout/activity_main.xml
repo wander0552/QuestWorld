@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar" />
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/draw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/activity_main_content" />
+
+        <!--&lt;!&ndash; 侧滑菜单内容 &ndash;&gt;-->
+
+        <LinearLayout
+            android:id="@+id/sliding"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@color/primary_dark"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <include layout="@layout/activity_main_sliding" />
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>

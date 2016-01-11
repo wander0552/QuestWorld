@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    android:orientation="vertical"
+    tools:context="com.wander.questworld.Release.AddTag">
+
+    <include layout="@layout/toolbar" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="@dimen/item_view"
+        android:background="@color/white"
+        android:gravity="left|top"
+        android:hint="写出属于你的标签"
+        android:padding="@dimen/border"
+        android:textSize="18sp"
+        android:textColor="@color/primary_text"
+        android:id="@+id/tags_edit"
+        android:textColorHint="@color/secondary_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_view"
+        android:layout_marginRight="@dimen/item_view"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中间用“，”分割，最多五个"
+            android:textColor="@color/secondary_text" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt_tag_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="添加" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_height="220dp">
+
+    <ImageView
+        android:id="@+id/sort_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/sort_image"
+        android:layout_marginLeft="@dimen/item_view"
+        android:layout_marginTop="@dimen/item_view"
+        android:layout_marginBottom="2dp"
+        android:textStyle="bold"
+        android:textColor="@color/icons"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/english_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country"
+        android:layout_marginLeft="@dimen/item_view"
+        android:textColor="@color/icons"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/sort_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/sort_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/item_view"
+        android:background="#86181818"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/icons"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

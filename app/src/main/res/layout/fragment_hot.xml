@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wander.questworld.Hot.HotFragment">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/divider"
+        android:dividerHeight="@dimen/item_view"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:headerDividersEnabled="true"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@color/primary"
+        android:smoothScrollbar="true" />
+
+</FrameLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_marginRight="@dimen/border"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/nearby_image"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/nearby_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/nearby_image"
+        android:background="#86181818"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="1212"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_text"
+        android:padding="5dp"
+        android:text="sdfsdk"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:id="@+id/nearby_name"
+        android:layout_below="@id/nearby_image"
+        />
+</RelativeLayout>

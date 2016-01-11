@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/divider" />
+
+        <thirdparty.MaterialRippleLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleColor="#c0585858"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <LinearLayout
+                android:id="@+id/clear_cache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/item_view"
+                    android:text="清除缓存"
+                    android:textColor="@color/primary_text"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/cache_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </thirdparty.MaterialRippleLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider" />
+
+        <thirdparty.MaterialRippleLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleColor="#c0585858"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <TextView
+                android:id="@+id/feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:padding="@dimen/item_view"
+                android:paddingLeft="@dimen/item_view"
+                android:text="反馈"
+                android:textColor="@color/primary_text"
+                android:textSize="20sp" />
+        </thirdparty.MaterialRippleLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider" />
+
+        <thirdparty.MaterialRippleLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleColor="#c0585858"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <LinearLayout
+                android:id="@+id/check_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/item_view"
+                    android:paddingLeft="@dimen/item_view"
+                    android:text="检查更新"
+                    android:textColor="@color/primary_text"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/item_view"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </thirdparty.MaterialRippleLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider" />
+
+        <thirdparty.MaterialRippleLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleColor="#c0585858"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <TextView
+                android:id="@+id/abort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:padding="@dimen/item_view"
+                android:paddingLeft="@dimen/item_view"
+                android:text="关于"
+                android:textColor="@color/primary_text"
+                android:textSize="20sp" />
+        </thirdparty.MaterialRippleLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/setting_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="#FF00"
+            android:text="退出登录" />
+    </LinearLayout>
+
+</LinearLayout>

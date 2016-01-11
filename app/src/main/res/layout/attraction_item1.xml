@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:id="@+id/header_photo"
+            android:padding="@dimen/item_view">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/photo_poi_normal" />
+
+            <TextView
+                android:id="@+id/attr_photo_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="图片1545"
+                android:textColor="@color/secondary_text"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:id="@+id/header_ins"
+            android:padding="@dimen/item_view">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/photo_poi_normal" />
+
+            <TextView
+                android:id="@+id/attr_ins_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="游记1545"
+                android:textColor="@color/secondary_text"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:id="@+id/header_map"
+            android:orientation="vertical"
+            android:padding="@dimen/item_view">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/map_poi_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地图"
+                android:textColor="@color/secondary_text"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/item_view"
+        android:id="@+id/attr_summary"
+        android:text="回复看见沙发空间和空间萨法HIU盾首付款接电话说客家话的时刻将发挥到水库发挥的时刻减肥货到付款机构和对方空间给对方看"
+        android:textColor="@color/primary_text"
+        android:textSize="15sp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/item_view"
+        android:layout_marginBottom="@dimen/item_view"
+        android:background="@color/divider" />
+</LinearLayout>

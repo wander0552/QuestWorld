@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.wander.questworld.Comment.Comment">
+
+        <include layout="@layout/toolbar" />
+
+        <TextView
+            android:id="@+id/no_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/item_view"
+            android:gravity="center"
+            android:text="还没有评论哦"
+            android:visibility="gone"
+            android:textColor="@color/secondary_text"
+            android:textSize="25sp" />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshRecyclerView
+            android:id="@+id/comment_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/border"
+            android:paddingRight="@dimen/border" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#42787878" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:minHeight="50dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/item_view"
+            android:paddingRight="@dimen/item_view">
+
+            <EditText
+                android:id="@+id/edit_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="写评论"
+                android:singleLine="false"
+                android:textColor="@color/primary_text"
+                android:textColorHint="@color/secondary_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/send_comment"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#0fff"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@color/secondary_text"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/comment_shadow"
+        android:visibility="gone"
+        android:background="#8f000000" />
+</FrameLayout>

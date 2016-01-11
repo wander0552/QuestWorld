@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_text"
+    android:clickable="true"
+    android:id="@+id/photo_frameLayout"
+    tools:context="com.wander.questworld.PhotoFragment">
+    <com.wander.MyView.numberprogressbar.NumberProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:padding="20dp"
+        custom:progress="0"
+        android:layout_gravity="center"
+        style="@style/NumberProgressBar_Passing_Green"
+        />
+
+    <ImageView
+        android:id="@+id/photo_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:transitionName="ins_image"
+       />
+
+    <TextView
+        android:id="@+id/photo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/icons"
+        android:textSize="18sp"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/item_view"
+        android:lines="3"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/photo_download"
+        android:layout_gravity="right|top"
+        android:layout_margin="15dp"
+        android:src="@drawable/offline_b"
+        />
+
+</FrameLayout>

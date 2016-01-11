@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/icons"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:text="回复"
+    android:textColor="@color/primary_text"
+    android:textSize="18sp"
+    android:clickable="true"
+    android:paddingBottom="@dimen/middle_border"
+    android:paddingTop="@dimen/middle_border"
+    android:paddingLeft="@dimen/item_view"
+    android:id="@+id/comment_reply"
+    />
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"
+        android:id="@+id/comment_click_divider"
+        />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/middle_border"
+        android:paddingLeft="@dimen/item_view"
+        android:paddingTop="@dimen/middle_border"
+        android:text="复制"
+        android:clickable="true"
+        android:id="@+id/comment_copy"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"
+        android:id="@+id/comment_click_divider2"/>
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/middle_border"
+        android:paddingLeft="@dimen/item_view"
+        android:paddingTop="@dimen/border"
+        android:text="举报"
+        android:clickable="true"
+        android:id="@+id/comment_report"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="0.5dp"
+        android:id="@+id/comment_click_divider3"
+        android:background="@color/divider" />
+</LinearLayout>

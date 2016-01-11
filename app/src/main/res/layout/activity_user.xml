@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wander.questworld.User.UserActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:contentPadding="1dp">
+
+            <thirdparty.MaterialRippleLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp">
+
+                <ImageView
+                    android:id="@+id/user_icon"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/post_photo_icon" />
+            </thirdparty.MaterialRippleLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/item_view"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/border"
+                android:text="wander"
+                android:textColor="@color/primary_text"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/user_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wander"
+                android:textColor="@color/secondary_text"
+                android:singleLine="true"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+    <include layout="@layout/activity_main_content" />
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logo108"
+        android:id="@+id/message_header"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/item_view"
+        android:layout_weight="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="众行天下"
+        android:textColor="@color/primary"
+        android:textSize="19sp"
+        />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/border"
+        android:id="@+id/message_notify_text"
+        android:text="正在下载更新...."
+        android:textColor="@color/secondary_text"
+        android:textSize="16sp"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>
